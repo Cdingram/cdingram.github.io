@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cody Ingram</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<link rel="stylesheet" type="text/css" href="fancy.css">
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	      </button>
+	      <a class="navbar-brand" href="#">Cody Ingram</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	     <ul class="nav navbar-nav navbar-right">
+	     	<li><a href="#about">About</a></li>
+	        <li><a href="#history">Portfolio</a></li>
+	        <li><a href="#skills">Skills</a></li>
+	        <li><a href="#facts">Facts</a></li>
+	        <li><a href="#contact">Contact</a></li>
+      	</ul>
+    	</div>
+	</div>
+</nav>
+
+<div class="jumbotron text-center">
+	<h1>CodingWithCody.com</h1>
+	<p>A Software Engineer Story</p>
+</div>
+
+<div id="about" class="container about text-center">
+	<div class="row">
+		<div class="col-sm-4">
+		<img src="Images/Profile.jpeg" class="img-circle me" alt="">
+		</div>
+		<div class="col-sm-4 me-text">
+		<h3>Who Am I?</h3>
+  		<p>Something something blablabla</p>
+		</div>
+	</div>
+</div>
+
+<div id="history" class="container-fluid history text-center">
+  <h3>Professional History</h3>
+  <div class="row btns">
+
+  	<div class="col-sm-4">
+  		<a href="#collapse1" data-toggle="collapse">
+     		<img src="Images/picto.png" class="img-circle port">
+    	</a>
+    <div id="collapse1" class="collapse">
+      <p>Picture Randomizer</p>
+      <p>iOS App Created with Swift</p>
+      <div class="container-fluid appBtn">
+      	<a href="https://geo.itunes.apple.com/ca/app/pictomizer/id1039715357?mt=8" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:165px;height:40px;"></a>
+      </div>
+    </div>
+    </div>
+
+  	<div class="col-sm-4">
+  		<a href="#collapse2" data-toggle="collapse">
+      <img src="Images/git.png" class="img-circle port">
+    </a>
+    <div id="collapse2" class="collapse">
+      <a class="git-link" href="https://github.com/Cdingram">My Personal Github</a>
+    </div>
+	</div>
+
+   	<div class="col-sm-4">
+  		<a href="#collapse3" data-toggle="collapse">
+      		<img src="Images/edu.png" class="img-circle port"> 
+    	</a>
+    <div id="collapse3" class="collapse">
+  		<p>University of Alberta</p>
+  		<p>Faculty of Science, BSc Honors</p>
+  		<p>Computing Science</p>
+  		<p>Class of 2016</p>
+  	</div>
+
+  </div>
+</div>
+
+<div id="skills" class="container-fluid skill">
+	<h3>Skills</h3>
+  <p>Lorem ipsum..</p>
+</div>
+</div>
+
+<div id="facts" class="container-fluid fact">
+	<h3>Important Things</h3>
+  <p>Lorem ipsum..</p>
+</div>
+
+<div id="contact" class="container-fluid contact">
+  <h2 class="text-center">CONTACT</h2><br>
+    <div class="contact-bits">
+      <p><span class="glyphicon glyphicon-map-marker"></span> Edmonton AB, Canada</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> cdingram@ualberta.ca</p> 
+    </div>
+</div>
+
+<footer class="container-fluid to-top text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Website by Cody Ingram</p> 
+  <p>2016</p> 
+</footer>
+
+<!-- smooth scrolling jQuery -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
+
+</body>
+</html>
