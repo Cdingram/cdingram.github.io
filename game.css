@@ -1,10 +1,11 @@
 .jumbotron {
 	background-color: #62bcfa;
 	background: url("Images/gameback.png");
-	background-size: cover;
-	opacity: 0.8;
-	color: #585858;
-	padding: 200px 100px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.75;
+	color: #000000;
+	padding: 100px 100px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-weight: bolder;
 	background-attachment: fixed;
