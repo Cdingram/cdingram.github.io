@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" type="text/css" href="game.css">
 
-<body>
+<body id="myPage">
 
 <div class="jumbotron text-center">
 	<h2>Games</h2>
@@ -35,7 +35,7 @@
 	<br>
 	<a href="Shade_Design_Document.pdf" class="link">Design Document</a>
 	<br>
-	<p>videos...</p>
+	<p>link to videos...</p>
 
 
 </div>
@@ -54,8 +54,41 @@
 	<p>A Starcraft AI bot based on David Churchill's Ualberta bot</p>
 	<p>Our team converted the bot's rush tactics into a more defensive strategy focused on the long game</p>
 	<br>
-	<p>link to github</p>
+	<p>need link to github</p>
 </div>
+
+<footer class="container-fluid to-top text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Website by Cody Ingram</p> 
+  <p><span class="glyphicon glyphicon-copyright-mark"></span> 2016</p> 
+</footer>
+
+<!-- smooth scrolling jQuery -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
 
 </body>
 

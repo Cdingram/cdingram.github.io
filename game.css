@@ -41,3 +41,9 @@ body {
 .link, .link:hover, .link:active, .link:visited { 
 	color: #C5F0EA;
 }
+
+.to-top {
+	padding-top: 25px;
+    padding-bottom: 25px;
+    color: #ffffff;
+}
