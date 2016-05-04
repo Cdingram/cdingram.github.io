@@ -100,3 +100,20 @@ body {
     padding-bottom: 25px;
     color: #ffffff;
 }
+.font-thin {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-size: 200%;
+}
+
+.font-semibold {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+}
+
+.font-light {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-size: 200%;
+}
